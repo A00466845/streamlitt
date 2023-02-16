@@ -1,7 +1,7 @@
 import streamlit as st
 from joblib import load
 
-st.title("rashad")
+st.title("iris dataset")
 LABELS=['setosa','virgicolor','virginica']
 clf=load("DT.joblib")
 
@@ -22,4 +22,4 @@ pe_w =st.slider('petal width (cm)',
 
 prediction= clf.predict([[sp_l,sp_w,pe_l,pe_w]])
 
-st.write(LABELS['prediction'])
+st.write(prediction)
