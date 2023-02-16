@@ -2,7 +2,7 @@ import streamlit as st
 from joblib import load
 
 st.title("iris dataset")
-LABELS=['setosa','virgicolor','virginica']
+LABELS=['setosa','versicolor','virginica']
 clf=load("DT.joblib")
 
 sp_l =st.slider('sepal length (cm)',
