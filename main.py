@@ -1,5 +1,6 @@
 import streamlit as st
 from joblib import load
+from sklearn import tree
 
 st.title("iris dataset")
 LABELS=['setosa','versicolor','virginica']
